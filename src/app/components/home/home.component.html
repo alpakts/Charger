@@ -1,0 +1,787 @@
+<body id="top" onresize="myFunction()">
+   
+    <section class="hero" style="height:100%">
+        <section class="navigation" style="height: 110px">
+            <header>
+
+                <div class="header-nav">
+                    <div class="header-content" style="padding:0px 0px ;display:-webkit-inline-box ;">
+                        <div class="logo" style="display: inline-block"><a href="#"><img
+                                    style="width: 150px; ;height:50px;bottom: 50px;" class="imgsize"
+                                    src="assets/img/charging vehicles2-01s.png" alt=" logo"></a></div>
+                        <nav>
+
+                            <ul class="primary-nav">
+                                <li><a href="">
+                                       
+                                        <div class="dropdown">
+                                            <span class="fromLeft">{{"Şarj Çözümleri"|translate}}</span>
+                                            <div class="dropdown-content transparent">
+                                                <p *ngFor="let for of form" class="transparent"><a href="">{{for}} </a>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="#features">
+                                        <div class="dropdown">
+                                            <span class="fromLeft" >{{"Avantajlar"| translate}}</span>
+                                            <div class="dropdown-content transparent">
+                                                <p *ngFor="let for of form" class="transparent"><a href="">{{for}} </a>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="#assets">
+                                        <div class="dropdown">
+                                            <span class="fromLeft">{{"Ürün ve Hizmetler"|translate}}</span>
+                                            <div class="dropdown-content transparent">
+                                                <p *ngFor="let for of form" class="transparent"><a href="">{{for}} </a>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li><a href="#download" class="hoverp">
+                                        <div class="dropdown">
+                                            <span class="fromLeft">{{"Hakkımızda"|translate}}</span>
+                                            <div class="dropdown-content transparent">
+                                                <p  *ngFor="let for of form" class="transparent"><a href="">{{for}} </a>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="#download">
+                                        <div class="dropdown">
+                                            <span class="fromLeft">{{"Destek"|translate}}</span>
+                                            <div class="dropdown-content transparent">
+                                                <p *ngFor="let for of form" class="transparent"><a href="">{{for}} </a>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </a></li>
+
+
+                            </ul>
+                            <ul class="member-actions" style="top:43px">
+                                <li><a href="http://app.voltrun.com/cmp/#/login"
+                                        class=" btn-fill-up login btn-small">{{"Giriş
+                                        Yap"|translate}}</a></li>
+                                <li style="width:30px ;"><a href="http://app.voltrun.com/cmp/#/map"
+                                        class="btn-fill-up btn-small">{{"İstasyon
+                                        Haritası"|translate}}</a></li>
+                                <li style="padding-left: 5px;"> 
+                                    <a *ngIf="lang=='en-US'"  (click)="changeLang('tr-TR')" href=""><img height="35px" src="assets/en-US.png" alt=""></a>
+                                    <a href="" role="button" (click)="changeLang('en-US')" role="button" *ngIf="lang=='tr-TR'"><img height="35px" src="assets/tr-TR.png" alt=""></a>
+                                    
+                                    <!-- <select
+                                        style="width: 50px; height: px; border-radius: 5px;background: transparent;border:none;color:wheat ;"
+                                        class="form-select form-select-sm" aria-label=".form-select-sm example"
+                                        (change)="changeLang($event)">
+                                        <option selected>{{var_name}}</option>
+                                        <option style="background-image:url(assets/img/logo2.png)" *ngIf="getLang()==1"
+                                            [selected]="lang=='en-US'" style="background:transparent" value="tr-TR">
+                                            TR</option>
+                                        <option *ngIf="getLang()==2" 
+                                            style="background:transparent" value="en-US">
+                                            EN</option>
+                                    </select> -->
+                                </li>
+
+                            </ul>
+
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+
+                </div>
+            </header>
+        </section>
+        <div class="backgroundss">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="hero-content text-center">
+
+                            <h1 style=" font-size: xx-large;text-transform:uppercase;">
+                                {{"homeBanner"|translate}}</h1>
+                       
+
+
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <h3>{{"station"|translate}}</h3>
+
+                                    <a href="#">{{"readMore"|translate}}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <h3>{{"Card"|translate}}</h3>
+
+                                    <a href="#">{{"readMore"|translate}}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <h3>{{"mobile"|translate}}</h3>
+
+                                    <a href="#">{{"readMore"|translate}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="down-arrow floating-arrow"><a href="#download"><i class="fa fa-angle-down"></i></a></div>
+
+        </div>
+    </section>
+    <section class="intro section-padding">
+        <div class="container" style="height: 100% ; width: 90%; margin-left: auto;">
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-charging-station"></i></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>{{"chargeHead"|translate}}</h5>
+                        <p>{{"ChargeText"|translate}}</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-hourglass"></i></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>{{"ChargeHisHead"|translate}}</h5>
+                        <p>{{"ChargeHisText"|translate}}</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-road"></i></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>{{"route"|translate}}</h5>
+                        <p>{{"routeText"|translate}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-map-location"></i></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>{{"chargeSta"|translate}}</h5>
+                        <p>{{"chargeStaText"|translate}}</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-wallet"></i></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>{{"payBill"|translate}}</h5>
+                        <p>{{ "payBillText"|translate}}</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>{{ "mobiles"|translate}}</h5>
+                        <p>{{"mobilestext"|translate}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features-extra section-padding" id="assets" style="height: fit-content; ">
+        <div class="container">
+            <div class="row">
+                <div style="position: absolute; 
+                background: transparent;
+                        left: 0px;
+                       
+                        top: 110px;
+                        width: 100%  ;" class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document" style="height: 0px;border:none">
+                        <div class="modal-content" style="background-color: transparent;border: none;    left: auto;box-shadow: none;
+                    width: fit-content;
+                    right: 112px;">
+                            <div class="modal-header" style="border:none">
+
+                                <button type="button" style="border:none" class="close" data-dismiss="modal"
+                                    aria-label="Close">
+                                    <span aria-hidden="true" style="border:none">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe width="800px" height="470px" src="https://www.youtube.com/embed/JGatcSHAgv8"
+                                    title="Güneşten Elektrik 37 - CW Enerji" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                            </div>
+                            <div class="modal-footer" style="text-align: center;border:none">
+                                <button type="button" style="border:none" class="btn btn-secondary"
+                                    data-dismiss="modal">{{"close"|translate}}</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="feature-list">
+                        <b>
+                            <h3>CW ENERJİ</h3>
+                        </b>
+                        <b>
+                            <p style="line-height: 20px;font-size:13px;">Easily change/switch/swap every placeholder
+                                inside every image on with the included
+                                Sketch files. You’ll have this template customised to suit your business in no time!
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam sapiente atque
+                                tempora corporis non facere earum error commodi quo tenetur ipsum a aliquid consectetur
+                                labore minus, nemo dolorum illum repellendus. Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Sint consequatur ratione accusantium corrupti, temporibus placeat
+                                rerum amet facere commodi dolores laudantium sed corporis delectus quam iusto nulla
+                                quidem error! Quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                provident distinctio eveniet dicta totam corporis incidunt repellat, amet accusantium
+                                aspernatur dolores, voluptas a consectetur odio voluptatum omnis laboriosam similique
+                                dolore! </p>
+                        </b>
+
+
+                        <a href="#" class="btn btn-ghost btn-accent btn-small">CW ENERJİ?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="macbook-wrap wp3 col-md-7;padding:0"><button type="button"
+                style="border:none;background:transparent" data-toggle="modal" data-target="#exampleModalLong">
+                <img height="400px" src="assets/img/25481-removebg-preview.png" alt="">
+            </button>
+
+            <!-- Modal -->
+        </div>
+        <div class="responsive-feature-img"><iframe width="100%" height="300px" style="@media screen and(max: width 500px;){
+            width:300px
+        }" src="https://www.youtube.com/embed/JGatcSHAgv8" title="Güneşten Elektrik 37 - CW Enerji" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    
+        <section class="hero-strip section-padding" style="padding-top: 30px;">
+            
+            <div class="strip-layer">
+                <div class="strip-blur">
+            <div class="contentx">
+                <div class="container" style="width: 100%; ">
+                    <div class="col-md-12 text-center" style="padding: 0;    margin-bottom: 5pc;">
+
+                        <b>
+                            <h2 style="margin-right: 50%;color: #fff; ">
+                                Uygulamamız
+                                mağazalardan ücretsiz olarak indirilebilir.
+                            </h2>
+                        </b>
+                        <h3 style="margin-right: 50%;  font-size:21px;color: #fff;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor incidunt quia dicta harum rem
+                            quos
+                            quo corporis quas dignissimos, accusantium error! Amet consequuntur odit ipsa impedit,
+                            incidunt
+                            sequi illum possimus!
+                            <div class="row" style="display:flex ; justify-content: space-between;margin-top: 10rem">
+                                <div class="col-md-6">
+
+                                    
+                                        <a href="https://www.apple.com/tr/app-store/" style=" margin-right: 100px; margin-top: 50px;" target="_blank" rel="noopener noreferrer"> <img height="80px"
+                                                width="256px" style="margin-bottom: 10px;"
+                                                src="assets/img/appstore.png" alt="">
+                                            </a>
+                                    
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    
+                                        <a href="https://play.google.com/store/apps?hl=tr&gl=US " target="_blank" rel="noopener noreferrer"> <img height="80px" width="256px"
+                                                style="margin-bottom: 10px;" src="assets/img/googleplay.png"
+                                                alt="">
+                                            
+                                        </a>
+                                   
+                                </div>
+
+
+
+                            </div>
+
+                        </h3>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </section>
+    
+
+    <section class="features section-padding" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-7">
+                    <div class="feature-list">
+                        <h3> will drive your product forward</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque unde rerum ipsam
+                            illo necessitatibus dolore, at alias ut rem odit cumque error, quia quae itaque. Vitae sequi
+                            assumenda in.</p>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe03e;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Universal & Responsive</h5>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eveniet pariatur
+                                        placeat perferendis expedita ratione quia corporis repudiandae, tenetur nobis
+                                        quasi, praesentium fugit atque? Voluptatum distinctio labore dolorum velit eius.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe040;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>User Centric Design</h5>
+                                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio excepturi amet
+                                        nihil tenetur dolor deserunt vitae blanditiis ipsa totam quisquam, veritatis
+                                        ipsum aut itaque voluptates provident nisi nobis cumque aliquam?Lorem ipsum,
+                                        dolor sit amet consectetur adipisicing elit. Doloribus vitae, provident
+                                        voluptatibus esse ab consectetur cum aliquam tempore exercitationem suscipit
+                                        doloremque iure aperiam voluptatem distinctio odio atque deleniti? Sequi,
+                                        dolorum?</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span class="icon"><i class="fa-solid fa-oil-well"></i></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Clean reusable code</h5>
+                                    <p>Download and re-use the open source code for any other project you like.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="device-showcase">
+            <div class="devices">
+                <div class="ipad-wrap "></div>
+                <div class="iphone-wrap ">
+                    
+                </div>
+                <div class="iphone-wrap1 "></div>
+
+            </div>
+        </div>
+        <div class="responsive-feature-img"><img src="assets/img/yenilenebilir.PNG"></div>
+    </section>
+    <section class="intro section-padding" style="background: #fff;position: relative;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-charging-station"></i></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Şarj İşlemini
+                            Başlat / Bitir</h5>
+                        <p>Web veya mobil uygulama
+                            üzerinden güvenli bir biçimde şarj
+                            işlemini başlatın ve bitirin</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-hourglass"></i></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Şarj
+                            Geçmişi</h5>
+                        <p>Gerçekleştirilen tüm şarj işlemlerini
+                            bilgilerini detaylı bir biçimde
+                            görüntüleyin</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-road"></i></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>Rota
+                            Oluşturma</h5>
+                        <p>Seyahat planınıza göre bir rota
+                            oluşturarak enerji yönetimini
+                            güvenilir bir biçimde sağlayın</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-map-location"></i></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Şarj
+                            Noktaları</h5>
+                        <p>Harita üzerinden tüm şarj
+                            istasyonlarını tarifeleri ile birlikte
+                            görüntüleyin</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-wallet"></i></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Fatura
+                            Ödeme</h5>
+                        <p>Farklı ödeme yöntemleri ile
+                            ödemelerinizi güvenli bir biçimde
+                            gerçekleştirin</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span class="icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>IOS ve Android
+                            Uyumlu</h5>
+                        <p>IOS ve Android platforma uygun,
+                            kullanımı kolay mobil uygulama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <div>
+            <div class="row">
+
+                <div class="col-md-12 imagediv">
+
+                </div>
+
+
+            </div>
+
+        </div>
+    
+    <section class="blog-intro section-padding" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Showcase your smashing product with </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <h5>EXCLUSIVE TO CODROPS</h5>
+                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <h5>SPREADING PIXELS AROUND THE WORLD</h5>
+                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog text-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <figure>
+                            <a href="assets/img/robot-handshake-human-background-futuristic-digital-age.jpg"
+                                class="single_image">
+                                <div class="blog-img-wrap">
+                                    <div class="overlay">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <img src="assets/img/robot-handshake-human-background-futuristic-digital-age.jpg"
+                                        alt=" blog image" />
+                                </div>
+                            </a>
+                            <figcaption>
+                                <h2><a href="#" class="blog-category" data-toggle="tooltip" data-placement="top"
+                                        data-original-title="See more posts">YAPAR ZEKA</a></h2>
+                                <p><a href="#" class="blog-post-title">Gelecek Evinizde <i
+                                            class="fa fa-angle-right"></i></a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <figure>
+                            <a href="assets/img/woman-holding-charger-charging-electric-car-close-up.jpg"
+                                class="single_image">
+                                <div class="blog-img-wrap">
+                                    <div class="overlay">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <img src="assets/img/woman-holding-charger-charging-electric-car-close-up.jpg"
+                                        alt=" blog image" />
+                                </div>
+                            </a>
+                            <figcaption>
+                                <h2><a href="#" class="blog-category" data-toggle="tooltip" data-placement="top"
+                                        data-original-title="See more posts">ŞARJ İSTASYONLARI</a></h2>
+                                <p><a href="#" class="blog-post-title">CW enerji tarafından destekleniyor<i
+                                            class="fa fa-angle-right"></i></a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <figure style="height:200px  ;">
+                            <a href="assets/img/GIRIS-01.jpg" class="single_image">
+                                <div class="blog-img-wrap">
+                                    <div class="overlay">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <img src="assets/img/GIRIS-01.jpg" class="single_image" alt=" blog image" />
+                                </div>
+                            </a>
+                            <figcaption>
+                                <h2><a href="#" class="blog-category" data-toggle="tooltip" data-placement="top"
+                                        data-original-title="See more posts">CW ENERJİ</a></h2>
+                                <p><a href="#" class="blog-post-title"> CW Enerji Güneş panelleri <i
+                                            class="fa fa-angle-right"></i></a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <a href="#" class="btn btn-ghost btn-accent btn-small">More news</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign-up section-padding text-center" id="download">
+        <div class="container">
+            <div class="row" style="width: 50%;">
+                <div style="width: 100%;">
+                    <h3>Get started with , absolutely free</h3>
+                    <p>Grab your copy today, exclusively from Codrops</p>
+                    <form class="signup-form" action="#" method="POST" role="form">
+                        <div class="form-input-group">
+                            <i class="fa fa-envelope"></i><input type="text" class="" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="form-input-group">
+                            <i class="fa fa-lock"></i><input type="text" class="" placeholder="Enter your password"
+                                required>
+                        </div>
+                        <button type="submit" class="btn-fill sign-up-btn">Sign up for free</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="to-top">
+        <div class="container">
+            <div class="row">
+                <div class="to-top-wrap">
+                    <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<section>
+    
+</section>
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5" >
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30" >
+                    <div class="single-cta" style="display:flex ;">
+                        <i class="fas fa-map-marker-alt logocolor"></i>
+                        <div class="cta-text" >
+                            <h4>Find us</h4>
+                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone logocolor"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210 0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open logocolor"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>infe@cw-enerji.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-content pt-5 pb-5">
+            <br>
+        <br>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="#top"><img src="assets/img/logo2.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                            elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Contact</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="copyright-area" >
+        <div class="container" >
+            <div class="row" style="display: inline-block;">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2022, All Right Reserved <a style="color:#3babb3" href="#">CV</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right" >
+                    <div class="footer-menu">
+                        <ul style="    display: flex;"> 
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block"
+            modal.style.position = "relative";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
